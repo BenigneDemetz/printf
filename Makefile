@@ -7,7 +7,7 @@ NAME = libftprintf.a
 all: ${NAME}
 
 ${NAME}:
-	@cd libft/ && @$(MAKE)
+	@cd libft/ && @$(MAKE) re
 	@gcc -Wall -Wextra -Werror -c ${SRCS}
 	@ar -rc ${NAME} *.o
 
