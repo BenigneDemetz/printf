@@ -21,7 +21,7 @@ ${NAME}:
 	@ar -rc libft.a *.o
 
 clean:
-	@rm -f ${OBJS} ${OBJS_B}
+	@rm -f ${OBJS}
 
 fclean: clean
 	@rm -f ${NAME}
