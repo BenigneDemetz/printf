@@ -7,7 +7,7 @@ NAME = libftprintf.a
 all: ${NAME}
 
 ${NAME}:
-	@cd libft/ && @$(MAKE) re
+	@cd libft/ && $(MAKE) re
 	@gcc -Wall -Wextra -Werror -c ${SRCS}
 	@ar -rc ${NAME} *.o
 
@@ -16,11 +16,11 @@ bonus:
 	@ar -rc libft.a *.o
 
 clean:
-	@cd libft/ && @$(MAKE) clean
+	@cd libft/ && $(MAKE) clean
 	@rm -f ${OBJS} ${OBJS_B}
 
 fclean: clean
 	@rm -f ${NAME}
-	@cd libft/ && @$(MAKE) fclean
+	@cd libft/ && $(MAKE) fclean
 
 re: fclean all
