@@ -28,4 +28,5 @@ int ft_printf(const char *input, ...)
         printf("%i%i",va_arg(print_args, int), cpt);
     }
     va_end(print_args);
+    return (0);
 }
