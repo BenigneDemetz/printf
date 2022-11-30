@@ -1,4 +1,5 @@
 #include "libftprintf.h"
+#include "libft/libft.h"
 
 static int printf_prct_count(const char *input)
 {
