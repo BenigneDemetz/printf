@@ -21,7 +21,7 @@ int ft_printf(const char *input, ...)
     va_list print_args;
     int cpt;
 
-    cpt = printf_prct_count(input);
+    cpt = prct_count(input);
     va_start(print_args, input);
     for (int i = 0; i < cpt; i++)
     {
