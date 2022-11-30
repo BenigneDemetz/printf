@@ -3,7 +3,7 @@
 #include <stdarg.h>
 #include "libft/libft.h"
 
-static int printf_prct_count(const char *input)
+static int prct_count(const char *input)
 {
     unsigned int i;
     unsigned int cpt;
