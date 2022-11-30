@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include "ft_printf.c"
+#include "libftprintf.h"
 
 int main (void)
 {
