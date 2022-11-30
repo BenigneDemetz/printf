@@ -9,15 +9,11 @@ all: ${NAME}
 ${NAME}:
 	@cd libft/ && $(MAKE) re
 	@gcc -Wall -Wextra -Werror -c ${SRCS}
-	@ar -rc ${NAME} *.o
-
-bonus:
-	@gcc -Wall -Wextra -Werror -c ${SRCS} ${BNSSRCS}
-	@ar -rc libft.a *.o
+	@ar -rc ${NAME} ${OBJS} libft/libft.a
 
 clean:
 	@cd libft/ && $(MAKE) clean
-	@rm -f ${OBJS} ${OBJS_B}
+	@rm -f ${OBJS}
 
 fclean: clean
 	@rm -f ${NAME}
