@@ -35,11 +35,6 @@ void	intmin(int fd)
 
 int	ft_itoa_wr(int n, int fd)
 {
-	if (n == MIN_INT)
-	{
-		intmin(fd);
-		return (1);
-	}
 	if (n < 0)
 	{
 		write(fd, "-", 1);
