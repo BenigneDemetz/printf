@@ -35,20 +35,17 @@ void	intmin(int fd)
 
 int	ft_itoa_wr(int n, int fd)
 {
-    long int i;
-
-    i = n;
-	if (i < 0)
+	if (n < 0)
 	{
 		write(fd, "-", 1);
-		rcrsv_print((unsigned int) -i, fd);
+		rcrsv_print((unsigned int) -n, fd);
 	}
 	else
-		rcrsv_print((unsigned int) i, fd);
+		rcrsv_print((unsigned int) n, fd);
 	return (1);
 }
 
-void	ft_putnbr_fd(long int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
 	ft_itoa_wr(n, fd);
 }
