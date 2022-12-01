@@ -48,7 +48,7 @@ int	ft_itoa_wr(int n, int fd)
 	return (1);
 }
 
-void	ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(long int n, int fd)
 {
 	ft_itoa_wr(n, fd);
 }
