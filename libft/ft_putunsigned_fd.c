@@ -24,11 +24,11 @@ void	rcrsv_unsigned_print(unsigned int n, int fd)
 		write (fd, &c, 1);
 		return ;
 	}
-	rcrsv_print(n / 10, fd);
+	rcrsv_unsigned_print(n / 10, fd);
 	write (fd, &c, 1);
 }
 
 void	ft_putunsigned_fd(unsigned int n, int fd)
 {
-    rcrsv_print(n, fd);
+    rcrsv_unsigned_print(n, fd);
 }
