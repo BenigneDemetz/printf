@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void	rcrsv_print(unsigned int n, int fd)
+void	rcrsv_unsigned_print(unsigned int n, int fd)
 {
 	int		i;
 	char	c;
